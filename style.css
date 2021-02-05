@@ -1,3 +1,4 @@
+
 p {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -11,13 +12,17 @@ h1 {
 .aboutme {
     display: inline-block;
     background-color: white;
-    transition: 3s;
+    transition: 1s;
     border: 1px solid black;
     border-radius: 5px;
     font-weight: bold;
     margin-top: 15px;
     font-size: 20px;
 } 
+
+.aboutme:hover{
+  background: linear-gradient(lightblue,violet);
+}
 
 .picture-card {
   width: 200px;
@@ -98,7 +103,7 @@ h2 {
 }
 
 #secret {
-  color: white;
+  color: lightblue;
   transition: 1s;
 }
 
@@ -152,7 +157,7 @@ h2 {
 }
 
 #work {
-  background: rgba(39, 111, 191, 0.1);
+  background: whitesmoke;
 }
 
 #work:hover {
@@ -169,7 +174,7 @@ h2 {
 }
 
 #fun {
-  background: rgba(255, 177, 0, 0.1);
+  background: whitesmoke;
 }
 
 #fun:hover {
@@ -189,7 +194,7 @@ h2 {
   text-align: center;
   width: 60%;
   margin: 0 auto;
-  background: white;                         /* White background */
+  background: lightblue;                         /* White background */
   padding: 30px;                             /* Internal space */
   border-radius: 4px;                        /* Small radius */
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
@@ -198,7 +203,7 @@ h2 {
 }
 
 ul {
-  list-style: none;
+  list-style:none;
   padding: 0;
 }
 
