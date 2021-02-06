@@ -1,4 +1,8 @@
 
+.main-containerbox{
+  background-image: url(images/background_16_WabjYvZ.wide.jpeg);
+}
+
 p {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -207,6 +211,3 @@ ul {
   padding: 0;
 }
 
-body {
-  background: rgba(234, 234, 234,0.02);
-}
