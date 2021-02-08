@@ -14,7 +14,7 @@
 <body>
   <div class="main">
     <header>
-      <image class="img-nav" src="images/download.png" width="70px"></image>
+      <a href="https://powercoders.org/"><image class="img-nav" src="images/download.png" width="70px"></image></a>
     </header>
     <nav class="navs">
         <div class="navs_container">
@@ -76,12 +76,8 @@
                   <a href="#video4"><i class="fas fa-gamepad"></i></a>
                 </div>
             </div>
-                <div class="sqr-box">
-                  <p>How you doing?</p>
-                    <span><p>This is the box that we wanted to
-                      have but we have to check with Mary
-                    </p></span>
-                                              
+                <div class="sqr-box" id="icon-text">
+                  <h1>Have Fun playing around with the videos and icons</h1>
                 </div>
               </div>          
         </div>
@@ -99,6 +95,11 @@
         var circle = document.getElementById("circle")
         var upBtn = document.getElementById("upBtn")
         var downBtn = document.getElementById("downBtn")
+        var iconText = document.getElementById('icon-text')
+        var one =  document.getElementById('one')
+        var two =  document.getElementById('two')
+        var three =  document.getElementById('three')
+        var four =  document.getElementById('four')
 
         var rotateValue = circle.style.transform;
         var rotateSum;
@@ -115,7 +116,19 @@
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
         }
-       
+
+      one.addEventListener('click', (event) => {
+        iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/KCQF7jdMa7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      two.addEventListener('click', (event) => {
+        iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Z-VfaG9ZN_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      three.addEventListener('click', (event) => {
+        iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/2CHT0q8QBy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      })
+      four.addEventListener('click', (event) => {
+        iconText.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/S4VJ29yH2Kc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' 
+      }) 
     </script>
 
       <div class="box5" id="hackera">

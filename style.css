@@ -55,6 +55,8 @@ li {
 
 li > a {
   display: inline-block;
+  position: relative;
+  right: -20px;
   font-size: 40px;
   letter-spacing: 20px;
   color: rgba(39, 111, 191, 1);
@@ -213,7 +215,7 @@ h2 {
 }
 .box4:hover {
   background: rgba(0, 0, 0, 0.5);
-  color: #aaa;
+  color: white;
 }
 .box5{
   text-align: center;
@@ -407,8 +409,20 @@ i:hover{
  width: 500px;
  height: 400px;
  color: transparent;
- left: 900px;
- top: 200px;
+ left: 850px;
+ top: 250px;
  position: absolute;
  color: white;
+}
+
+.sqr-box h1{
+  color: black;
+  font-size: 85px;
+  position: absolute;
+  top: 55px;
+}
+
+.sqr-box h1:hover{
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
