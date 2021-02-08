@@ -34,7 +34,7 @@
         <h2>Junior Web Developer Trainee</h2>
         <div>
         <img class="profile-image-round" src="images/daniel profile.jpg" alt="profile picture">
-        <div></div><button hrer = # class="aboutme">About Me</button></div>
+        <div></div><a href=""></a><button class="aboutme">About Me</button></div>
         </div>
         </div>
 
@@ -56,7 +56,6 @@
         <div class="picture-card"><img class="fun-pic" src="images/fun1.jpg" alt="sports"></div>
         <div class="picture-card"> <img class="fun-pic" src="images/fun2.jpg" alt="hostel party"></div>
         <div class="picture-card"><img class="fun-pic" src="images/fun3.jpg" alt="partyy"></div>
-        <!-- pic of frisbee, ping pong other -->
         <br><a href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank"><button id="btn-fun">Let's Enjoy together</button></a>
       </div>
 
@@ -65,29 +64,37 @@
             <img src="images/daniel profile.jpg" class="mobile">
             <div id="circle">
                 <div class="feature one" id="one">
-                    <i class="fas fa-futbol"></i>
+                  <a href="#video1" id="btn1"><i class="fas fa-futbol"></i></a>
                 </div>
                 <div class="feature two" id="two">
-                  <i class="fas fa-laptop-code"></i>
+                  <a href="#video2" id="btn2"><i class="fas fa-laptop-code"></i></a>
                 </div>
                 <div class="feature three" id="three">
-                  <i class="fas fa-basketball-ball"></i>
+                  <a href="#video3"><i class="fas fa-basketball-ball"></i></a>
                 </div>
                 <div class="feature four" id="four">
-                    <i class="fas fa-gamepad"></i>
+                  <a href="#video4"><i class="fas fa-gamepad"></i></a>
                 </div>
             </div>
+            <div  id="video1">
+              <iframe  width="360" height="215" src="https://www.youtube.com/embed/PSanJ5swYBM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+              <iframe id="video2" width="360" height="215" src="https://www.youtube.com/embed/Z-VfaG9ZN_U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="video3" width="360" height="215" src="https://www.youtube.com/embed/T06yJR-Xzd4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe id="video4" width="360" height="215" src="https://www.youtube.com/embed/S4VJ29yH2Kc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
         </div>
         <div class="controls">
-            <i class="fas fa-arrow-up" id="upBtn"></i>
+            <img src="images/computer-icons-arrow-font-arrow.jpg" id="upBtn">
             <h3>Features</h3>
-            <i class="fas fa-arrow-up" id="downBtn"></i>
+            <img src="images/computer-icons-arrow-font-arrow.jpg" id="downBtn">
         </div>
     </div>
 
 
 
     <script>
+
         var circle = document.getElementById("circle")
         var upBtn = document.getElementById("upBtn")
         var downBtn = document.getElementById("downBtn")
@@ -107,6 +114,7 @@
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
         }
+       
     </script>
 
       <div class="box5" id="hackera">
