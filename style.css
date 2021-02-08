@@ -86,33 +86,6 @@ h2 {
   height: 200px;
 }
 
-@keyframes animated_div {
-0% {
-    transform: rotate(0deg);
-    left: 0px;
-}
-25% {
-    transform: rotate(20deg);
-    left: 0px;
-}
-50% {
-    transform: rotate(0deg);
-    left: 500px;
-}
-55% {
-    transform: rotate(0deg);
-    left: 500px;
-}
-70% {
-    transform: rotate(0deg);
-    left: 500px;
-}
-100% {
-    transform: rotate(-360deg);
-    left: 0px;
-}
-
-}
 
 #pointless-btn {
   background: black;
@@ -213,8 +186,8 @@ h2 {
   transition: 0.2s;
 }
 .box2:hover {
-  background-image: url(images/box4.gif);
-  color: #aaa;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 .box3{
   text-align: center;
@@ -226,7 +199,7 @@ h2 {
   transition: 0.2s;
 }
 .box3:hover {
-  background-image: url(images/box3.gif);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 .box4{
@@ -239,7 +212,7 @@ h2 {
   transition: 0.2s;
 }
 .box4:hover {
-  background-image: url(images/box2.gif);
+  background: rgba(0, 0, 0, 0.5);
   color: #aaa;
 }
 .box5{
@@ -253,7 +226,7 @@ h2 {
   margin-top: 10em;
 }
 .box5:hover {
-  background-image: url(images/box6.gif);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -375,10 +348,14 @@ a:hover{
 }
 
 i{
-  color: #fff;
+  color: white;
   font-size: 85px;
   letter-spacing: 50px;
 }
+i:hover{
+  color: blue;
+}
+
 .mobile{
   width: 200px;
   object-fit:cover;
@@ -426,24 +403,12 @@ i{
   top: 0;
 }
 
-#video1{
-  position: absolute;
-  left: 950px;
-  top: 270px;
-
-}
-#video2{
-  position: absolute;
-  left: 950px;
-  top: 270px;
-}
-#video3{
-  position: absolute;
-  left: 950px;
-  top: 270px;
-}
-#video4{
-  position: absolute;
-  left: 950px;
-  top: 270px;
+.sqr-box{
+ width: 500px;
+ height: 400px;
+ color: transparent;
+ left: 900px;
+ top: 200px;
+ position: absolute;
+ color: white;
 }
