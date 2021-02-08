@@ -6,23 +6,40 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/f4a6667233.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 </head>
+
+
+
 <body>
-  <div class="main-containerbox">
-      <div class="boxes">
+  <div class="main">
+    <header>
+      <image class="img-nav" src="images/download.png" width="70px"></image>
+    </header>
+    <nav class="navs">
+        <div class="navs_container">
+         <ul>
+            <button class="btn-nav"><a href="#home">Home</a><li></li></button>
+            <button class="btn-nav"><a href="#Work">Work</a><li></li></button>
+            <button class="btn-nav"><a href="#funny">Fun</a><li></li></button>
+            <button class="btn-nav"><a href="#hackera">Contact</a><li></li></button>
+          </ul>
+        </div>
+      </nav>
+  </div>  
+
+
+      <div class="box1" id="home">
         <h1>Daniel Alvarado</h1>
-        <h2>Learning with Style</h2>
+        <h2>Junior Web Developer Trainee</h2>
         <div>
         <img class="profile-image-round" src="images/daniel profile.jpg" alt="profile picture">
-        <div>
-        </div><button hrer = # class="aboutme">ABOUT ME</button></div>
+        <div></div><button hrer = # class="aboutme">About Me</button></div>
         </div>
         </div>
-      </div>
 
-      <div class="boxes" id="Work">
-        <h2>Work and projects</h2>
+      <div class="box2" id="Work">
+        <h2 class="h2-1">Work and projects</h2>
         <p> My passion is <strong>challenges</strong>, I like troubles and find a way to resolve the issues is what i live for.</p>
         <p> I worked as Sales Senior Supervisor at a Call Center where I was shown a little part of programming software.</p>
         <p> 3 years ago I started to work as a Data analyst where I was able to create a project where we are able to automatize all data proccess into a dashboard.</p>
@@ -32,8 +49,8 @@
         <br><a href="https://www.linkedin.com/in/daniel-alvarado-962698178/" target="_blank"><button id="btn-work">Check me out</button></a>
       </div>
 
-      <div class="boxes" id="funny">
-        <h2>My life outside of work</h2>
+      <div class="box3" id="funny">
+        <h2 class="h2-1">My life outside of work</h2>
         <p>You may think that I like party a lot but I prefer spending time with family and friends.</p>
         <p>I'm not an outgoing person but <strong>love</strong> to make some new friends.</p><br>
         <div class="picture-card"><img class="fun-pic" src="images/fun1.jpg" alt="sports"></div>
@@ -43,23 +60,62 @@
         <br><a href="https://www.youtube.com/watch?v=1fjhIWJSxfw" target="_blank"><button id="btn-fun">Let's Enjoy together</button></a>
       </div>
 
-      <div class="boxes" id="hackera">
-        <h2>HEY WAIT HOVER AROUND</h2>
-        <p> Try to hover here...</p>
-        <p id="secret"> You found my secret message, welcome to the complicated side.</p>
-        <p id="secret"> Become a web developer by clicking this link --> <a id="secret" href="https://websitesetup.org/website-coding-html-css/">deepweb: coding.secret</a></p>
+      <div class="information">
+        <div class="overlay"></div>
+            <img src="images/daniel profile.jpg" class="mobile">
+            <div id="circle">
+                <div class="feature one" id="one">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="feature two" id="two">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="feature three" id="three">
+                  <i class="fas fa-basketball-ball"></i>
+                </div>
+                <div class="feature four" id="four">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="fas fa-arrow-up" id="upBtn"></i>
+            <h3>Features</h3>
+            <i class="fas fa-arrow-up" id="downBtn"></i>
+        </div>
+    </div>
 
-        <br><button id="pointless-btn">Vanishing pointless button</button>
-      </div>
 
-      <div class="boxes">
-        <h2>Follow me on:</h2>
+
+    <script>
+        var circle = document.getElementById("circle")
+        var upBtn = document.getElementById("upBtn")
+        var downBtn = document.getElementById("downBtn")
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+      <div class="box5" id="hackera">
+        <h2 class="h2-1">Follow me on:</h2>
         <ul>
           <li><a href="https://www.instagram.com/daniel310787/" target="_blank"><i class="fab fa-instagram"></i></a></li>
           <li><a href="https://www.facebook.com/Menjivar0731" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
           <li><a href="https://github.com/Daniel310787" target="_blank"><i class="fab fa-github-square"></i></a></li>
         </ul>
       </div>
-  </div>
 </body>
 </html>
