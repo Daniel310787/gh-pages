@@ -210,12 +210,16 @@ h2 {
   margin: 0 auto;
   padding: 30px;                             
   border-radius: 4px;                        
-  margin-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: -150px;
   transition: 0.2s;
+  color: transparent;
+  text-shadow: 4px 4px 4px #aaa;
 }
 .box4:hover {
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  text-shadow: none;
 }
 .box5{
   text-align: center;
@@ -426,3 +430,34 @@ i:hover{
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
+
+.pic-container{
+  width: 260px;
+  height: 500px;
+  display: inline-block;
+  margin-top: 25px;
+  
+  border-radius: 3%;
+}
+
+.pic-container:hover{
+  background-color: rgba(1, 1, 1, .50);
+
+}
+
+.picture-card1{
+  width: 200px;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 28px;
+}
+
+.relax-pic{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+
